@@ -30,4 +30,14 @@ public class Control {
             return false;
         }
     }
+
+    public String getText(){
+        getControl();
+        return this.control.getText();
+    }
+
+    public String getTextProperty(String value) {
+        getControl();
+        return control.getAttribute(value);
+    }
 }
