@@ -9,7 +9,7 @@ public class Session {
     private static Session session;
     private WebDriver browser;
     private Session(){
-        browser = FactoryBrowser.make("chrome").create();
+        browser = FactoryBrowser.make("firefox").create();
         browser.manage().window().maximize();
         browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
     }
